@@ -39,4 +39,4 @@ chown droppy:droppy /files
 
 export HOME=/home/droppy
 
-exec /bin/sudo -u droppy node /droppy/cli/lib/cli.js start
+exec /bin/su -u droppy node /droppy/packages/cli/lib/cli.js start
