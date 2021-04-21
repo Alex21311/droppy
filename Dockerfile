@@ -33,7 +33,7 @@ RUN apt-get -y update && \
 FROM base as builder
 
 RUN apt-get -y install -y make gcc g++ && \
-    git clone --depth=1  https://github.com/droppyjs/droppy /droppy && \
+    git clone --depth=1  https://github.com/Alex21311/droppy /droppy && \
     rm -rf /droppy/node_modules && \
     cd /droppy && \
     yarn 
@@ -44,7 +44,7 @@ RUN apt-get -y install -y make gcc g++ && \
 # -------------------------------------------------- #
 
 FROM base as application
-LABEL maintainer="https://github.com/droppyjs/droppy"
+LABEL maintainer="https://github.com/Alex21311/droppy"
 
 # Copy files
 COPY --from=builder ["/droppy/node_modules", "/droppy/node_modules"]
