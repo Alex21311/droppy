@@ -83,12 +83,33 @@ $ yarn global add @droppyjs/cli
 $ npm install -g @droppyjs/cli
 ```
 
-### Docker installation :whale:
+###### Docker installation :whale:
 
-**Note: The current Dockerfile is broken. Please do not use this yet.**
+The [`silverwind/droppy`](https://hub.docker.com/r/silverwind/droppy/) multi-arch images supports `amd64`, `arm64`, `arm/v7` and `arm/v6` architectures. To pull and run, use:
+
+```sh
+$ docker run --name droppy -p 8989:8989 alex21311/droppy
+```
+
+This method uses automatic volumes for `/config` and `/files` which can be overridden through `-v /srv/droppy/config:/config` and `-v /srv/droppy/files:/files`. If you're using existing files, it's advisable to use `-e UID=1000 -e GID=1000` to get new files written with correct ownership.
+
+To update a docker installation, run
+
+```sh
+$ docker pull alex21311/droppy
+$ docker stop droppy && docker rm droppy
+$ docker run --name droppy -p 8989:8989 alex21311/droppy
+```
+
 ### docker-compose
+Alternatively, you can use the example [`docker-compose.yml`](https://github.com/alex21311/droppy/blob/master/examples/docker-compose.yml):
 
-**Note: The current Dockerfile is broken. Please do not use this yet.**
+```sh
+$ curl -O https://raw.githubusercontent.com/alex21311/droppy/master/examples/docker-compose.yml
+$ docker-compose up
+```
+This example `docker-compose.yml` uses the subdirectories `config` and `files` of the current working directory for storing data.
+
 ### Caddy
 
 See the example [Caddyfile](examples/Caddyfile).
