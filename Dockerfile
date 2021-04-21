@@ -2,8 +2,8 @@
 #
 #           .:.
 #    :::  .:::::.    Droppy
-#  ..:::..  :::      Made with love <3 
-#   ':::'   :::      
+#  ..:::..  :::      Made with love <3
+#   ':::'   :::
 #     '
 #
 
@@ -23,7 +23,7 @@ ENV PATH $VOLTA_HOME/bin:$PATH
 RUN apt-get -y update && \
     apt-get -y install aria2 gnupg software-properties-common \
         python3 git curl bash openssl && \
-    curl https://get.volta.sh | bash 
+    curl https://get.volta.sh | bash
 
 
 # -------------------------------------------------- #
@@ -36,7 +36,7 @@ RUN apt-get -y install -y make gcc g++ && \
     git clone --depth=1  https://github.com/Alex21311/droppy /droppy && \
     rm -rf /droppy/node_modules && \
     cd /droppy && \
-    yarn 
+    yarn
 
 
 # -------------------------------------------------- #
@@ -44,7 +44,7 @@ RUN apt-get -y install -y make gcc g++ && \
 # -------------------------------------------------- #
 
 FROM base as application
-LABEL maintainer="https://github.com/Alex21311/droppy"
+LABEL maintainer="Alex21311"
 
 # Copy files
 COPY --from=builder ["/droppy/node_modules", "/droppy/node_modules"]
@@ -64,9 +64,9 @@ RUN cd /droppy && \
     /tmp/* \
     /usr/lib/node_modules \
     /usr/local/lib/node_modules \
-    /usr/local/share/.cache && \ 
+    /usr/local/share/.cache && \
   apt-get -y remove --purge --auto-remove systemd && \
-  rm -rf /var/cache/apt/archives/ \  
+  rm -rf /var/cache/apt/archives/ \
     /var/lib/apt/lists/ \
     /usr/share/man/ \
     /usr/share/locale/ \
