@@ -85,7 +85,7 @@ $ npm install -g @droppyjs/cli
 
 ###### Docker installation :whale:
 
-The [`silverwind/droppy`](https://hub.docker.com/r/silverwind/droppy/) multi-arch images supports `amd64`, `arm64`, `arm/v7` and `arm/v6` architectures. To pull and run, use:
+To pull and run, use:
 
 ```sh
 $ docker run --name droppy -p 8989:8989 alex21311/droppy
