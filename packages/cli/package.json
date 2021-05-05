@@ -1,13 +1,13 @@
 {
-    "name": "@droppyjs/cli",
+    "name": "@alex21311/cli",
     "version": "0.0.4",
     "description": "> TODO: description",
-    "author": "droppyjs <hello@droppyjs.com>",
-    "homepage": "https://github.com/droppyjs/droppy#readme",
+    "author": "alex21311 <hello@alex21311.com>",
+    "homepage": "https://github.com/alex21311/droppy#readme",
     "license": "BSD-2-Clause",
     "main": "lib/cli.js",
     "dependencies": {
-        "@droppyjs/server": "0.0.4",
+        "@alex21311/server": "0.0.4",
         "daemonize-process": "^3.0.0",
         "minimist": "^1.2.5",
         "ps-node": "^0.1.6",
@@ -39,13 +39,13 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/droppyjs/droppy.git"
+        "url": "git+https://github.com/alex21311/droppy.git"
     },
     "scripts": {
         "start": "node ./lib/cli.js start"
     },
     "bugs": {
-        "url": "https://github.com/droppyjs/droppy/issues"
+        "url": "https://github.com/alex21311/droppy/issues"
     },
     "publishConfig": {
         "access": "public"

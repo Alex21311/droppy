@@ -5,7 +5,7 @@
     "author": "silverwind <me@silverwind.io>",
     "repository": "silverwind/droppy",
     "license": "BSD-2-Clause",
-    "bugs": "https://github.com/droppyjs/droppy/issues",
+    "bugs": "https://github.com/alex21311/droppy/issues",
     "preferGlobal": true,
     "private": true,
     "engines": {

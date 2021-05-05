@@ -30,9 +30,9 @@ droppy_download () {
 CONFIG_DIRECTORY_DEFAULT="/srv/droppy/config";
 FILES_DIRECTORY_DEFAULT="/srv/droppy/files";
 
-SYSTEMD_SERVICE="https://raw.githubusercontent.com/droppyjs/droppy/canary/examples/droppy.service"
-INITD_SERVICE="https://raw.githubusercontent.com/droppyjs/droppy/canary/examples/droppy.init.d"
-#LAUNCHCTL_SERVICE="https://raw.githubusercontent.com/droppyjs/droppy/canary/examples/com.droppyjs.plist"
+SYSTEMD_SERVICE="https://raw.githubusercontent.com/alex21311/droppy/canary/examples/droppy.service"
+INITD_SERVICE="https://raw.githubusercontent.com/alex21311/droppy/canary/examples/droppy.init.d"
+#LAUNCHCTL_SERVICE="https://raw.githubusercontent.com/alex21311/droppy/canary/examples/com.alex21311.plist"
 
 VALID_PACKAGE_MANAGERS=( "yarn"  "npm" )
 VALID_SERVICE_MANAGERS=( "systemd" "initd" "none" )
@@ -140,9 +140,9 @@ echo "";
 sleep 3
 
 if [ $PACKAGE_MANAGER_DEFAULT = "yarn" ]; then
-    yarn global add @droppyjs/cli
+    yarn global add @alex21311/cli
 elif [  $PACKAGE_MANAGER_DEFAULT = "npm" ]; then
-    npm install -g @droppyjs/cli
+    npm install -g @alex21311/cli
 else
     echo "unknown package manager $PACKAGE_MANAGER_DEFAULT";
     exit 1;

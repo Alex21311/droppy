@@ -1,9 +1,9 @@
 {
-    "name": "@droppyjs/server",
+    "name": "@alex21311/server",
     "version": "0.0.4",
     "description": "> TODO: description",
-    "author": "droppyjs <hello@droppyjs.com>",
-    "homepage": "https://github.com/droppyjs/droppy#readme",
+    "author": "alex21311 <hello@alex21311.com>",
+    "homepage": "https://github.com/alex21311/droppy#readme",
     "license": "BSD-2-Clause",
     "main": "lib/index.js",
     "directories": {
@@ -15,16 +15,16 @@
     ],
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/droppyjs/droppy.git"
+        "url": "git+https://github.com/alex21311/droppy.git"
     },
     "scripts": {
         "test": "echo \"Error: run tests from root\" && exit 1"
     },
     "bugs": {
-        "url": "https://github.com/droppyjs/droppy/issues"
+        "url": "https://github.com/alex21311/droppy/issues"
     },
     "dependencies": {
-        "@droppyjs/client": "0.0.4",
+        "@alex21311/client": "0.0.4",
         "busboy": "0.3.1",
         "chokidar": "3.4.2",
         "colorette": "1.2.1",
@@ -58,13 +58,13 @@
         "autoprefixer": "9.8.6",
         "clean-css": "4.2.3",
         "eslint": "7.7.0",
-        "eslint-config-silverwind": "18.0.2",
+        "eslint-config-alex21311": "18.0.2",
         "eslint-plugin-unicorn": "21.0.0",
         "html-minifier": "4.0.0",
         "lerna": "^3.22.1",
         "postcss": "7.0.32",
         "stylelint": "13.6.1",
-        "stylelint-config-silverwind": "2.0.8",
+        "stylelint-config-alex21311": "2.0.8",
         "terser": "5.2.1",
         "updates": "10.3.5"
     },

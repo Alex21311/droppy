@@ -1,4 +1,4 @@
-extends: stylelint-config-silverwind
+extends: stylelint-config-alex21311
 
 rules:
   max-empty-lines: 2

@@ -1,5 +1,5 @@
 root: true
-extends: silverwind
+extends: alex21311
 
 overrides:
   - files: ["packages/client/**/*.js"]

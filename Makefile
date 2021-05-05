@@ -29,7 +29,7 @@ publish:
 docker:
 	@rm -rf node_modules
 	yarn -s --production --pure-lockfile
-	$(eval IMAGE := silverwind/droppy)
+	$(eval IMAGE := alex21311/droppy)
 	$(eval VERSION := $(shell cat package.json | jq -r .version))
 	$(eval ARCHS := "linux/amd64,linux/arm64,linux/arm/v7,linux/arm/v6")
 	@docker rm -f "$$(docker ps -a -f='ancestor=$(IMAGE)' -q)" 2>/dev/null || true

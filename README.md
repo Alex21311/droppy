@@ -1,9 +1,9 @@
 <p align="center">
-  <img src="https://cdn.jsdelivr.net/gh/droppyjs/droppy/client/images/readme-logo.svg"/>
+  <img src="https://cdn.jsdelivr.net/gh/alex21311/droppy/client/images/readme-logo.svg"/>
 </p>
 <p align="center">
-  <a href="https://www.npmjs.org/package/@droppyjs/cli"><img src="https://img.shields.io/npm/v/@droppyjs/cli.svg"></a>
-  <a href="https://raw.githubusercontent.com/droppyjs/droppy/master/LICENSE"><img src="https://img.shields.io/badge/licence-bsd-blue.svg"></a>
+  <a href="https://www.npmjs.org/package/@alex21311/cli"><img src="https://img.shields.io/npm/v/@alex21311/cli.svg"></a>
+  <a href="https://raw.githubusercontent.com/alex21311/droppy/master/LICENSE"><img src="https://img.shields.io/badge/licence-bsd-blue.svg"></a>
 </p>
 
 **droppy** is a self-hosted file storage server with a web interface and capabilities to edit files and view media directly in the browser. It is particularly well-suited to be run on low-end hardware like the Raspberry Pi.
@@ -38,9 +38,9 @@ droppy maintains an in-memory representation of the `files` directory. If you're
 With [`Node.js`](https://nodejs.org) >= 12.10.0 installed, run:
 
 ```sh
-$ yarn global add @droppyjs/cli
+$ yarn global add @alex21311/cli
 # or, for NPM users:
-$ npm install -g @droppyjs/cli
+$ npm install -g @alex21311/cli
 ```
 
 Then start your server with your configuration options: 
@@ -78,9 +78,9 @@ npm remove -g droppy
 Now install as normal:
 
 ```sh
-$ yarn global add @droppyjs/cli
+$ yarn global add @alex21311/cli
 # or, for NPM users:
-$ npm install -g @droppyjs/cli
+$ npm install -g @alex21311/cli
 ```
 
 ###### Docker installation :whale:
@@ -211,10 +211,10 @@ $ wget --content-disposition url
 # Development
 To start a live-reloading dev server:
 ````sh
-$ git clone https://github.com/droppyjs/droppy && cd droppy
+$ git clone https://github.com/alex21311/droppy && cd droppy
 $ lerna bootstrap
 $ yarn start
 ````
-The [Makefile](https://github.com/droppyjs/droppy/blob/master/Makefile) has a few old tasks for updating dependencies, pushing docker images, see the comment above for dependencies of those tasks. This should not be required anymore, but is left as a reference.
+The [Makefile](https://github.com/alex21311/droppy/blob/master/Makefile) has a few old tasks for updating dependencies, pushing docker images, see the comment above for dependencies of those tasks. This should not be required anymore, but is left as a reference.
 
-© [Mark Hughes](https://github.com/droppyjs), [silverwind](https://github.com/silverwind), distributed under BSD licence.
+© [alex21311](https://github.com/alex21311), [Mark Hughes](https://github.com/droppyjs), [silverwind](https://github.com/silverwind), distributed under BSD licence.

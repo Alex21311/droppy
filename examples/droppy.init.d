@@ -7,7 +7,7 @@
 # Default-Start:     2 3 4 5
 # Default-Stop:      0 1 6
 # Short-Description: droppy
-# Description:       droppy - github.com/droppyjs/droppy
+# Description:       droppy - github.com/alex21311/droppy
 ### END INIT INFO
 
 DROPPY_CONFIG_DIR="/srv/droppy/config"

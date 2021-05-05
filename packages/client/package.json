@@ -1,9 +1,9 @@
 {
-    "name": "@droppyjs/client",
+    "name": "@alex21311/client",
     "version": "0.0.4",
     "description": "> TODO: description",
-    "author": "droppyjs <hello@droppyjs.com>",
-    "homepage": "https://github.com/droppyjs/droppy#readme",
+    "author": "alex21311 <hello@alex21311.com>",
+    "homepage": "https://github.com/alex21311/droppy#readme",
     "license": "BSD-2-Clause",
     "main": "lib/client.js",
     "dependencies": {
@@ -40,13 +40,13 @@
     ],
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/droppyjs/droppy.git"
+        "url": "git+https://github.com/alex21311/droppy.git"
     },
     "scripts": {
         "test": "echo \"Error: run tests from root\" && exit 1"
     },
     "bugs": {
-        "url": "https://github.com/droppyjs/droppy/issues"
+        "url": "https://github.com/alex21311/droppy/issues"
     },
     "publishConfig": {
         "access": "public"
